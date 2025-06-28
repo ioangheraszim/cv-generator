@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directory
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Local environment settings
+*.local
+.env
+.env.*.local
+
+# Vite cache
+.vite/
+
+# ESLint and Prettier cache
+.eslintcache
+.prettiercache
+
+# Editor directories and files
+.vscode/*            # Ignore VS Code settings...
+!.vscode/extensions.json  # ...except extensions list (optional team config)
+.idea                # JetBrains IDE settings
+.DS_Store            # macOS finder file
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?                # Swap or state files
+
+# Test coverage (if added later)
+coverage/
+*.lcov
+
+# Optional: Local build artifacts
+build/
