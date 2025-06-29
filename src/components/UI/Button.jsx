@@ -1,8 +1,10 @@
-const Button = ({ onClick, children, variant = 'primary' }) => {
+import '../../styles/Buttons.css';
+
+const Button = ({ onClick, text, variant = 'primary' }) => {
   const className = variant === 'outline' ? 'btn-outline' : 'btn';
   return (
     <button onClick={onClick} className={className}>
-      {children}
+      {text}
     </button>
   );
 };

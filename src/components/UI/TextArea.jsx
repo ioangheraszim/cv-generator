@@ -4,3 +4,5 @@ const TextArea = ({ label, value, onChange, placeHolder }) => {
     <textarea value={value} onChange={onchange} placeholder={placeHolder} />
   </div>;
 };
+
+export default TextArea;
