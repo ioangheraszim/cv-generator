@@ -11,7 +11,6 @@ const GeneralInfoForm = ({ data, onChange }) => {
       <h2>General Information</h2>
       <div className="form-group">
         <Input
-          label="Full Name"
           name="fullName"
           value={data.fullName || ''}
           onChange={handleChange}
@@ -19,7 +18,6 @@ const GeneralInfoForm = ({ data, onChange }) => {
         />
         <Input
           name="email"
-          label="Email"
           type="email"
           value={data.email || ''}
           placeholder="john@example.com"
@@ -28,7 +26,6 @@ const GeneralInfoForm = ({ data, onChange }) => {
         <Input
           name="phoneNumber"
           value={data.phoneNumber || ''}
-          label="Phone Number"
           type="tel"
           placeholder="Phone Number"
           onChange={handleChange}

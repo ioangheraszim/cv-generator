@@ -1,8 +1,9 @@
-const TextArea = ({ label, value, onChange, placeHolder }) => {
-  <div className="input-group">
-    <label htmlFor="">{label}</label>
-    <textarea value={value} onChange={onchange} placeholder={placeHolder} />
-  </div>;
+const TextArea = ({ value, onChange, placeholder }) => {
+  return (
+    <div className="input-group">
+      <textarea value={value} onChange={onChange} placeholder={placeholder} />
+    </div>
+  );
 };
 
 export default TextArea;
