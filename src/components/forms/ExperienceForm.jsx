@@ -1,5 +1,7 @@
+// components/forms/ExperienceForm.jsx
 import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
+
 function ExperienceForm({ data, onChange }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -10,39 +12,34 @@ function ExperienceForm({ data, onChange }) {
     <>
       <h2>Experience</h2>
       <Input
-        type="text"
         name="company"
-        value={data.company}
+        value={data.company || ''}
         onChange={handleChange}
         placeholder="Company Name"
       />
       <Input
-        type="text"
         name="position"
-        value={data.position}
+        value={data.position || ''}
         onChange={handleChange}
-        placeholder="Position Name"
+        placeholder="Position Title"
       />
       <TextArea
-        type="textarea"
         name="responsibility"
-        value={data.responsibility}
+        value={data.responsibility || ''}
         onChange={handleChange}
         placeholder="Main Responsibilities"
       />
       <Input
-        type="text"
         name="startDate"
-        value={data.startDate}
+        value={data.startDate || ''}
         onChange={handleChange}
-        placeholder="Start Date (e.g., Jan 2020)"
+        placeholder="Start Date"
       />
       <Input
-        type="text"
         name="endDate"
-        value={data.endDate}
+        value={data.endDate || ''}
         onChange={handleChange}
-        placeholder="End Date (e.g., May 2025)"
+        placeholder="End Date"
       />
     </>
   );

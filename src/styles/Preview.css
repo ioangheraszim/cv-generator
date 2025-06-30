@@ -1,0 +1,67 @@
+/* Preview.css */
+.preview-wrapper {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  max-width: 700px;
+  width: 100%;
+  font-family: 'Georgia', serif; /* classic CV font */
+  color: #1f2937;
+}
+
+.cv-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: white;
+}
+
+.cv-container h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 2px solid #6366f1;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.cv-container p,
+.cv-container li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.3rem 0;
+  color: #374151;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 365px) {
+  .preview-wrapper {
+    padding: 1rem;
+    max-width: 365px;
+  }
+}
+
+/* Print styles: only print the preview */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .preview-wrapper,
+  .preview-wrapper * {
+    visibility: visible;
+  }
+
+  .preview-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}

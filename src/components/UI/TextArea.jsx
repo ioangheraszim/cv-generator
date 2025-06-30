@@ -1,7 +1,12 @@
-const TextArea = ({ value, onChange, placeholder }) => {
+const TextArea = ({ value = '', onChange, placeholder, name }) => {
   return (
     <div className="input-group">
-      <textarea value={value} onChange={onChange} placeholder={placeholder} />
+      <textarea
+        name={name}
+        value={value || ''}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
     </div>
   );
 };

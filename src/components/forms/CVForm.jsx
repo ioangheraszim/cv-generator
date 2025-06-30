@@ -1,14 +1,13 @@
+// components/forms/CVForm.jsx
 import EducationForm from './EducationForm';
 import ExperienceForm from './ExperienceForm';
 import GeneralInfoForm from './GeneralInfoForm';
+import SkillsForm from './SkillsForm';
+import '../../styles/Form.css';
 
 const CVForm = ({ cvData, setCvData }) => {
   const updateSection = (section, data) => {
-    setCvData((prevData) => {
-      const newData = { ...prevData, [section]: data };
-      console.log(newData);
-      return newData;
-    });
+    setCvData((prevData) => ({ ...prevData, [section]: data }));
   };
 
   return (
@@ -20,6 +19,10 @@ const CVForm = ({ cvData, setCvData }) => {
       <EducationForm
         data={cvData.education}
         onChange={(data) => updateSection('education', data)}
+      />
+      <SkillsForm
+        data={cvData.skills}
+        onChange={(data) => updateSection('skills', data)}
       />
       <ExperienceForm
         data={cvData.experience}

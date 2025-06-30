@@ -1,17 +1,31 @@
-.btn {
-  background-color: #007bff;
+/* Button.css */
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #6366f1;
   color: white;
-  padding: 0.5rem 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  width: fit-content;
+  align-self: flex-start;
 }
 
-.btn-outline {
-  background: none;
-  border: 2px solid #007bff;
-  color: #007bff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
+button:hover {
+  background-color: #4f46e5;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgb(99 102 241 / 0.7);
+}
+
+.print-button {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 200px;
 }

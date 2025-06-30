@@ -1,19 +1,20 @@
 const Input = ({
   label,
-  value,
+  value = '',
   onChange,
   type = 'text',
   placeholder,
   name,
 }) => (
   <div className="input-group">
-    <label>{label}</label>
+    {label && <label htmlFor={name}>{label}</label>}
     <input
       type={type}
       name={name}
-      value={value}
+      value={value || ''}
       onChange={onChange}
       placeholder={placeholder}
+      id={name}
     />
   </div>
 );

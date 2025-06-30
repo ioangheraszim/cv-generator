@@ -1,3 +1,4 @@
+// components/forms/EducationForm.jsx
 import Input from '../UI/Input';
 
 function EducationForm({ data, onChange }) {
@@ -11,24 +12,21 @@ function EducationForm({ data, onChange }) {
       <h2>Education</h2>
       <Input
         name="schoolName"
-        type="text"
-        placeholder="Full Name"
         value={data.schoolName || ''}
         onChange={handleChange}
+        placeholder="School Name"
       />
       <Input
-        name="text"
-        type="text"
+        name="titleStudy"
         value={data.titleStudy || ''}
-        placeholder="Title of Study"
         onChange={handleChange}
+        placeholder="Title of Study"
       />
       <Input
-        name="phoneNumber"
-        type="text"
-        placeholder="Date of Study"
+        name="dateStudy"
         value={data.dateStudy || ''}
         onChange={handleChange}
+        placeholder="Date of Study"
       />
     </>
   );
